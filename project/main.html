@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link href="CSS/outlines.css" rel="stylesheet">
+		<meta name="keywords" content="Егор,Белехов,портфолио,резюме">
+		<meta name="description" content="Это резюме-портфолио Белехова Егора.">
+		<title>Белехов Егор М33021</title>
+	</head>
+	<body>
+		</header>
+			<nav>
+				Me, skills, experience, education, hobby, about
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h3>Me</h3>
+				<strong>Белехов Егор Алексеевич</strong>
+			</section>
+			<section>
+				<h3>Skills</h3>
+			</section>
+				<ul>
+					<li>C#</li>
+					<li>.Net</li>
+					<li>EF</li>
+				</ul>
+			<section>
+				<h3>Experience</h3>
+			</section>
+				<ol>
+					<li>
+						<h4>Лабораторные работы</h4>
+						<ul>
+							<li>Кубик-рубика</li>
+							<li>Игра жизнь</li>
+						</ul>
+					</li>
+					<li>
+						<h4>Работа</h4>
+						<ul>
+							<li>Разработка бэка корпоративного портала</li>
+						</ul>
+					</li>
+				</ol>
+			<section>
+				<h3>Education</h3>
+			</section>
+			<section>
+				<h3>Hobby</h3>
+			</section>
+				<pre><code>
+void qsortRecursive(int *mas, int size) {
+	int i = 0;
+	int j = size - 1;
+
+	int mid = mas[size / 2];
+
+	do {
+		while(mas[i] < mid) {
+			i++;
+		}
+		while(mas[j] > mid) {
+			j--;
+		}
+
+		if (i <= j) {
+			int tmp = mas[i];
+			mas[i] = mas[j];
+			mas[j] = tmp;
+
+			i++;
+			j--;
+		}
+	} while (i <= j);
+
+
+	if(j > 0) {
+		qsortRecursive(mas, j + 1);
+	}
+	if (i < size) {
+		qsortRecursive(&mas[i], size - i);
+	}
+}
+				</code></pre>
+			<section>
+				<h3>About</h3>
+				<p>sin<sup>2</sup>x+cos<sup>2</sup>x=1</p>
+				<blockquote>
+					<pre>
+1.
+Без соли хлеб плох,
+
+2.
+без хлеба зря соль.
+
+3.
+Республика для горнорабочих хлеб отбирает,
+
+4.
+а ты соль добыть изволь!
+
+1921, январь
+					</pre>
+					<cite>
+						Владимир Маяковский
+					</cite>
+				</blockquote>
+				
+				<pre>
+        ／＞　 フ
+       | 　_　 _|
+      ／`ミ _x 彡
+     /　　　 　 |
+    /　 ヽ　　 ﾉ
+ ／￣|　　 |　|　|
+ | (￣ヽ＿_ヽ_)_)
+ ＼二つ
+				</pre>
+			</section>
+		</main>
+		<footer>
+			<h3>Contacts</h3>
+			<article>
+				<dl>
+					<dt>
+						<h4>Email<h4>
+					</dt>
+					<dd>
+						<i>belehov.egor2001@yandex.ru<i>
+					</dd>
+					<dt>
+						<h4>VK<h4>
+					</dt>
+					<dd>
+						<i>https://vk.com/egorkabelehov<i>
+					</dd>
+				</dl>
+			</article>
+		</footer>
+	</body>
+</html>
