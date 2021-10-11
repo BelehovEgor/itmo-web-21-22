@@ -22,223 +22,176 @@
 				<div class="navigation__row">
 					<div class="navigation__item">
 						<div class="navigation__tags">
-							<a class="navigation__tag">Главое</a>
-							<a class="navigation__tag">Знания</a>
-							<a class="navigation__tag">Опыт</a>
-							<a class="navigation__tag">Образование</a>
-							<a class="navigation__tag">Хобби</a>
-							<a class="navigation__tag">Обо мне</a>
+							<a class="navigation__tag" href="#main">Главное</a>
+							<a class="navigation__tag" href="#my_skills">Знания</a>
+							<a class="navigation__tag" href="#my_experience">Опыт</a>
+							<a class="navigation__tag" href="#my_edu">Образование</a>
+							<a class="navigation__tag" href="#my_hobby">Хобби</a>
+							<a class="navigation__tag" href="#about_me">Обо мне</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section>
-				<div class="block description">
-					<div class="description__text">
-						<div class="person-card">
-							<div class="person-card__image" style="background: url('Resources/me.jpg') center/cover no-repeat"></div>
-							<div class="person-cart__text">
-								<div class="person-card__title light__text">Белехов Егор</div>
-								<div class="person-card__subtitle dark__text">Студент ИТМО, 3 курс</div>
-							</div>
-						</div>
-					</div>
-					<div class="description__text">
-							<p class="description__title block__title light__text">Привет!</p>
-							<p class="block__subtitle dark__text">Я занимаюсь разработкой back-end. Сейчас я стажер в компании Lanit-Tercom, в скорем будущем надеюсь выйти на позицию junior-developer.</p>
-							<p class="block__subtitle dark__text">На данной странице вы можете получше узнать обо мне: увидеть, что я умею, чем увлекаюсь и как смотрю на этот мир.</p>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="block skills">
-					<div class="block__title green__text">Знания</div>
-					<div class="skills__list">
-						<div class="skill light__text">C#</div>
-						<div class="skill light__text">.Net</div>
-						<div class="skill light__text">Entity Framework</div>
-						<div class="skill light__text">ASP.NET</div>
-						<div class="skill light__text">Rabbit MQ</div>
-						<div class="skill light__text">Redis</div>
-						<div class="skill light__text">English B1+</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="block experience">
-					<div class="block__title green__text">Опыт</div>
-					<ol>
-						<li>
-							<h4>Разработка back-end'а корпоративного портала.</h4>
-							<ul>
-								<li>
-									Микросервисная архитектура написанная на <b>C#</b>. В проекте в качестве брокера использовался <b>RabbitMQ</b> и <b>MassTransit</b>. 
-									Также использовался <b>Redis</b> для создания общего кэша для нескольких сервисов.
-								</li>
-							</ul>
-						</li>
-						<li>
-							<h4>Лабораторные работы/Проекты в университете</h4>
-							<ol>
-								<li>
-									Кубик-рубика
-									<ul>
-										<li>
-											Разработан алгорит сборки кубика рубика на <b>C++</b> - при вводе первоначального разположения граней, 
-											программа выведет набор операций, которые необходимо произвести для того, чтобы собрать кубик. 
-										</li>
-										<li>
-											Далее была реализована визуализация с использованием <b>OpenGl</b>. Был отрисован 3d кубик, с анимацией вращений граней. 
-											Грани можно крутить самому, а можно запустить алгоритм сборки и посмотреть как надо было делать.
-										</li>
-									</ul>
-								</li>
-								<li>
-									Игра жизнь
-									<ul>
-										<li>
-											Лабораторная работа, цель которой было по заданной картинке с первоначальным положением провести эволюцию до конца или показать определенное число итераций.
-										</li>
-									</ul>
-								</li>
-								<li>
-									Алгоритмы сжатия/изменений изображений
-									<ul>
-										<li>
-											Набор лабараторных работ, в ходе которого было реализован набор алгоритмов сжатия, обработки и сглаживания изображений, как чб так и цветных.
-										</li>
-									</ul>
-								</li>
-							</ol>
-						</li>
-					</ol>
-				</div>
-			</section>
-			<section>
-				<div class="block education">
-					<div class="block__title green__text">Образование</div>
-					<div class="education__table">
-						<div class="education__title-small">2019-н.в.</div>
-						<div class="education__subtitle">
-							Бакалавр,
-							<br>
-							Университет ИТМО,
-							<br>
-							Факультет «Информационные технологии и программирование»
-							<br>
-							Средний балл: 4.9
-						</div>
-						<div class="education__title-small">10.2020-12.2020.</div>
-						<div class="education__subtitle">
-							Тинькофф образование,
-							<br>
-							направление Scala.
-						</div>
-						<div class="education__title-small">02.2021-05.2021.</div>
-						<div class="education__subtitle">
-							Школа Lanit-Tercom,
-							<br>
-							Проект "Digital office", направление back-end.
+			<section class="block description">
+				<a class="anchor" name="main"></a>
+				<div class="description__text">
+					<div class="person-card">
+						<div class="person-card__image" style="background: url('Resources/me.jpg') center/cover no-repeat"></div>
+						<div class="person-cart__text">
+							<div class="person-card__title light__text">Белехов Егор</div>
+							<div class="person-card__subtitle dark__text">Студент ИТМО, 3 курс</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section>
-				<div class="block hobbies">
-					<div class="block__title green__text">Хобби</div>
-						<div class="hobbies__list">
-							<div class="hobby light__text">Настольные игры</div>
-							<div class="hobby light__text">Просмотр сериалов/фильмов/аниме</div>
-							<div class="hobby light__text">Спорт</div>
-						</div>
+				<div class="description__text">
+						<p class="description__title block__title light__text">Привет!</p>
+						<p class="block__subtitle dark__text">Я занимаюсь разработкой back-end. Сейчас я стажер в компании Lanit-Tercom, в скорем будущем надеюсь выйти на позицию junior-developer.</p>
+						<p class="block__subtitle dark__text">На данной странице вы можете получше узнать обо мне: увидеть, что я умею, чем увлекаюсь и как смотрю на этот мир.</p>
 				</div>
 			</section>
-				<pre><code>
-void qsortRecursive(int *mas, int size) {
-	int i = 0;
-	int j = size - 1;
-
-	int mid = mas[size / 2];
-
-	do {
-		while(mas[i] < mid) {
-			i++;
-		}
-		while(mas[j] > mid) {
-			j--;
-		}
-
-		if (i <= j) {
-			int tmp = mas[i];
-			mas[i] = mas[j];
-			mas[j] = tmp;
-
-			i++;
-			j--;
-		}
-	} while (i <= j);
-
-
-	if(j > 0) {
-		qsortRecursive(mas, j + 1);
-	}
-	if (i < size) {
-		qsortRecursive(&mas[i], size - i);
-	}
-}
-				</code></pre>
-			<section>
-				<div class="block about">
-					<div class="block__title green__text">Обо мне</div>
-					<p>sin<sup>2</sup>x+cos<sup>2</sup>x=1</p>
-					<blockquote class="light__text">
-						<pre>
-1.
-Без соли хлеб плох,
-
-2.
-без хлеба зря соль.
-
-3.
-Республика для горнорабочих хлеб отбирает,
-
-4.
-а ты соль добыть изволь!
-
-1921, январь
-						</pre>
-						<cite class="light__text">
-							Владимир Маяковский
-						</cite>
-					</blockquote>
 				
-					<pre><font color="#FFFFFF">
-        ／＞　 フ
-       | 　_　 _|
-      ／`ミ _x 彡
-     /　　　 　 |
-    /　 ヽ　　 ﾉ
- ／￣|　　 |　|　|
- | (￣ヽ＿_ヽ_)_)
- ＼二つ
-					</font></pre>
+			<section class="block skills" >
+				<a class="anchor" name="my_skills"></a>
+				<div class="block__title green__text">Знания</div>
+				<div class="skills__list">
+					<div class="skill light__text">C#</div>
+					<div class="skill light__text">.Net</div>
+					<div class="skill light__text">Entity Framework</div>
+					<div class="skill light__text">ASP.NET</div>
+					<div class="skill light__text">Rabbit MQ</div>
+					<div class="skill light__text">MassTransit</div>
+					<div class="skill light__text">Redis</div>
+					<div class="skill light__text">English B1+</div>
 				</div>
 			</section>
+				
+			<section class="block experience">
+				<a class="anchor" name="my_experience"></a>
+				<div class="block__title green__text">Опыт</div>
+				<ol>
+					<li>
+						<h4>Разработка back-end'а корпоративного портала.</h4>
+						<ul>
+							<li>
+								Микросервисная архитектура написанная на <b>C#</b>. В проекте в качестве брокера использовался <b>RabbitMQ</b> и <b>MassTransit</b>. 
+								Также использовался <b>Redis</b> для создания общего кэша для нескольких сервисов.
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4>Лабораторные работы/Проекты в университете</h4>
+						<ol>
+							<li>
+								Кубик-рубика
+								<ul>
+									<li>
+										Разработан алгорит сборки кубика рубика на <b>C++</b> - при вводе первоначального разположения граней, 
+										программа выведет набор операций, которые необходимо произвести для того, чтобы собрать кубик. 
+									</li>
+									<li>
+										Далее была реализована визуализация с использованием <b>OpenGl</b>. Был отрисован 3d кубик, с анимацией вращений граней. 
+										Грани можно крутить самому, а можно запустить алгоритм сборки и посмотреть как надо было делать.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Игра жизнь
+								<ul>
+									<li>
+										Лабораторная работа, цель которой было по заданной картинке с первоначальным положением провести эволюцию до конца или показать определенное число итераций.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Алгоритмы сжатия/изменений изображений
+								<ul>
+									<li>
+										Набор лабараторных работ, в ходе которого было реализован набор алгоритмов сжатия, обработки и сглаживания изображений, как чб так и цветных.
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</section>
+
+			<section class="block education">
+				<a class="anchor" name="my_edu"></a>
+				<div class="block__title green__text">Образование</div>
+				<div class="education__table">
+					<div class="education__title-small">2019-н.в.</div>
+					<div class="education__subtitle">
+						Бакалавр,
+						<br>
+						Университет ИТМО,
+						<br>
+						Факультет «Информационные технологии и программирование»
+						<br>
+						Средний балл: 4.9
+					</div>
+					<div class="education__title-small">10.2020-12.2020.</div>
+					<div class="education__subtitle">
+						Тинькофф образование,
+						<br>
+						направление Scala.
+					</div>
+					<div class="education__title-small">02.2021-05.2021.</div>
+					<div class="education__subtitle">
+						Школа Lanit-Tercom,
+						<br>
+						Проект "Digital office", направление back-end.
+					</div>
+				</div>
+			</section>
+				
+			<section class="block hobbies" name="my_hobby">
+				<a class="anchor" name="my_hobby"></a>
+				<div class="block__title green__text">Хобби</div>
+					<div class="hobbies__list">
+						<div class="hobby light__text">Настольные игры</div>
+						<div class="hobby light__text">Просмотр сериалов/фильмов/аниме</div>
+						<div class="hobby light__text">Спорт</div>
+					</div>
+			</section>
+			
+			<section class="block about" name="about_me">
+				<a class="anchor" name="about_me"></a>
+				<div class="block__title green__text">Обо мне</div>
+				<div class="about__list">
+					<div class="about__card">
+						<div class="about__image" style="background: url('Resources/Kostroma.jpg') center/cover no-repeat"></div>
+						<p>Родной город: Кострома</p>
+					</div>
+					<div class="about__card">
+						<div class="about__image" style="background: url('Resources/Cats.jpg') center/cover no-repeat"></div>
+						<p>Любимое животное: котики</p>
+					</div>
+					<div class="about__card">
+						<div class="about__image" style="background: url('Resources/Chess.jpg') center/cover no-repeat"></div>
+						<p>Любимая настольная игра: шахматы</p>
+					</div>
+					<div class="about__card">
+						<div class="about__image" style="background: url('Resources/F1.jpg') center/cover no-repeat"></div>
+						<p>Любимый вид спорта: Формула 1</p>
+					</div>
+				</div>
+			</section>
+			
 		</main>
 		<footer>
-			<div class="block contact__list">
+			<div class="block contact">
 				<div class="contact__title">Контакты</div>
-				<div class="contact">
+				<div class="contact__record">
 					<span class="green__text">email: </span>
 					<span class="light__text">belehov.egor2001@yandex.ru</span>
 				</div>
-				<div class="contact">
+				<div class="contact__record">
 					<span class="green__text">vk: </span>
 					<span class="light__text">@egorkabelehov</span>
 				</div>
-				<div class="contact">
+				<div class="contact__record">
 					<span class="green__text">telegram: </span>
 					<span class="light__text">@egorkabelehov</span>
 				</div>

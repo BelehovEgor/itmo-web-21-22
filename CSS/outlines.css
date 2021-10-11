@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth
+}
+
 p {
   text-align: left;
   font-size: 16px;
@@ -28,6 +32,11 @@ code {
 	color: #FFFFFF;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.anchor {
+	position: absolute;
+	top: -90px;
 }
 
 .dark__text {
@@ -74,6 +83,7 @@ code {
 }
 
 .navigation__tag {
+	text-decoration: none;
 	color: #86C232;
 	width: 150px;
 	text-align: center;
@@ -86,8 +96,10 @@ code {
 	box-sizing: border-box;
 	position: relative;
 }
+
 .block:last-child {
 	padding-bottom: 5px;
+	margin-bottom: 0;
 }
 
 .description {
@@ -203,11 +215,6 @@ code {
 	font-size: 16px;
 }
 
-.about {
-	max-width: 1000px;
-	align-items: left;
-}
-
 .education__table {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -232,15 +239,41 @@ code {
 	margin-bottom: 15px;
 }
 
-.block:last-child {
-    margin-bottom: 0;
+.about {
+	max-width: 1000px;
+	align-items: center;
 }
 
-.contact__list {
+.about__list {
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about__card {
+	border-radius: 20px;
+	display: inline-block;
+	padding: 15px;
+	margin: 15px;
+	position: relative;
+	box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+}
+
+.about__image {
+	height: 300px;
+	width: 400px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
 	max-width: 1000px;
 	max-height: 100px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: rows;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: right;
@@ -250,10 +283,10 @@ code {
 	font-weight: 600;
 	font-size: 16px;
 	color: #86C232;
-	padding: 15px;
+	margin-bottom: 10px;
 }
 
-.contact {
+.contact__record {
 	font-size: 16px;
 	text-align: left;
 	font-weight: 600;
