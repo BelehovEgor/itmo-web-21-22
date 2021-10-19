@@ -173,7 +173,7 @@ code {
 	align-items: center;
 }
 
-.skill {
+.skills__skill {
 	margin: 10px;
 	padding: 10px;
 	border-color: #61892F;
@@ -205,7 +205,7 @@ code {
 	align-items: center;
 }
 
-.hobby {
+.hobbies__hobby {
 	margin: 10px;
 	padding: 10px;
 	border-color: #61892F;
