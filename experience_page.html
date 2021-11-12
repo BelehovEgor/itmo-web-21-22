@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link href="CSS/outlines.css" rel="stylesheet">
+		<title>Experience</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-color: #222629;
+				font-family: 'Montserrat', sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="navigation">
+				<div class="navigation__row">
+					<div class="navigation__item">
+						<div class="navigation__tags">
+							<a class="navigation__tag" id="main" href="index.html">Главное</a>
+							<a class="navigation__tag" id="knowledge" href="knowledge_page.html">Знания</a>
+							<a class="navigation__tag" id="experience" href="#my_experience">Опыт</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+				
+			<section class="block experience">
+				<a class="anchor" name="my_experience"></a>
+				<div class="block__title green__text">Опыт</div>
+				<ol>
+					<li>
+						<h4>Разработка back-end'а корпоративного портала.</h4>
+						<ul>
+							<li>
+								Микросервисная архитектура написанная на <b>C#</b>. В проекте в качестве брокера использовался <b>RabbitMQ</b> и <b>MassTransit</b>. 
+								Также использовался <b>Redis</b> для создания общего кэша для нескольких сервисов.
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h4>Лабораторные работы/Проекты в университете</h4>
+						<ol>
+							<li>
+								Кубик-рубика
+								<ul>
+									<li>
+										Разработан алгорит сборки кубика рубика на <b>C++</b> - при вводе первоначального разположения граней, 
+										программа выведет набор операций, которые необходимо произвести для того, чтобы собрать кубик. 
+									</li>
+									<li>
+										Далее была реализована визуализация с использованием <b>OpenGl</b>. Был отрисован 3d кубик, с анимацией вращений граней. 
+										Грани можно крутить самому, а можно запустить алгоритм сборки и посмотреть как надо было делать.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Игра жизнь
+								<ul>
+									<li>
+										Лабораторная работа, цель которой по заданной картинке, с первоначальным положением, провести эволюцию до конца или показать определенное число итераций.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Алгоритмы сжатия/изменений изображений
+								<ul>
+									<li>
+										Набор лабораторных работ, в ходе которых был реализован набор алгоритмов сжатия, обработки и сглаживания изображений, как чб так и цветных.
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</section>
+			<div class="light__text" id="task4-2"></div>
+		</main>
+	</body>
+	<script src="JS/main_script.js"></script>
+</html>

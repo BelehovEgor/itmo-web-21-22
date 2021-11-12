@@ -87,6 +87,15 @@ code {
 	color: #86C232;
 	width: 150px;
 	text-align: center;
+	transition: 0.2s ease;
+}
+
+.navigation__tag:hover {
+	color: white;
+}
+
+.navigation__tag_selected {
+	text-decoration: underline;
 }
 
 .block {
