@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link href="../CSS/outlines.css" rel="stylesheet">
+		<link href="../CSS/table.css" rel="stylesheet">
+		<link href="../CSS/data.css" rel="stylesheet">
+		<meta name="keywords" content="Егор,Белехов,портфолио,резюме">
+		<meta name="description" content="Это резюме-портфолио Белехова Егора.">
+		<title>Белехов Егор М33021</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-color: #222629;
+				font-family: 'Montserrat', sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="navigation">
+				<div class="navigation__row">
+					<div class="navigation__item">
+						<div class="navigation__tags">
+							<a class="navigation__tag" id="main" href="#aboutme">Главное</a>
+							<a class="navigation__tag" id="knowledge" href="knowledge_page.html">Знания</a>
+							<a class="navigation__tag" id="experience" href="experience_page.html">Опыт</a>
+							<a class="navigation__tag" id="schedule" href="schedule.html">Расписание</a>
+							<a class="navigation__tag" id="data" href="data.html">Данные</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="loading_image"></div>
+			<section class="wrapper">
+					<div style="margin-top: 80px;">
+						<div id="posts_container">
+						</div>
+					</div>
+					<div id="buttons" class="button_container">
+						<button id="prev_button" class="button" type="submit" onclick="prevPost()">Предыдущий</button>
+						<button id="next_button" class="button" type="submit" onclick="nextPost()">Следующий</button>
+					</div>
+			</section>
+		</main>
+		<footer>
+			<div class="light__text" id="task4-2"></div>
+		</footer>
+	<script src="../JS/main_script.js"></script>
+	<script src="../JS/data.js"></script>
+</html>

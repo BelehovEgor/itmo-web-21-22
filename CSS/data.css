@@ -1,0 +1,80 @@
+.loading_image {
+	position: fixed;
+	top: 15%;
+	left: 43%;
+	width: 200px;
+	height: 200px;
+	opacity: 1;
+	background: url('../Resources/dogo.gif');
+	z-index: 50;
+}
+
+.loading .loading_image {
+	display: initial;
+}
+
+.loaded .loading_image {
+    display: none;
+}
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+}
+
+.button_container{
+	display: flex;	
+	justify-content: center;
+}
+
+.post {
+	max-width: 1000px;
+	align-items: left;
+	border-color: #61892F;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 20px;
+	padding: 10px 5px;
+}
+
+.post__title {
+	color: #FEFFFF;
+	font-weight: 800;
+	font: 20px;
+	margin-bottom: 10px;
+	margin-top: 6px;
+}
+
+.post__id {
+	color: #86C232;
+}
+
+.post__body {
+	color: #6B6E70;
+	font-weight: 600;
+}
+
+.comments {
+	max-width: 900px;
+	align-items: left;
+	border-top: 1px solid green;
+}
+
+.comments__title {
+	color: #FEFFFF;
+	font-weight: 700;
+	font: 18px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.comments__name {
+	color: #86C232;
+}
+
+.comments__body {
+	color: #6B6E70;
+	font-weight: 600;
+}
+

@@ -18,5 +18,8 @@ switch (local[local.length - 1]) {
 	case "schedule.html":
 		document.getElementById("schedule").classList.add("navigation__tag_selected");
 		break;
+	case "data.html":
+		document.getElementById("data").classList.add("navigation__tag_selected");
+		break;
 }
 	
