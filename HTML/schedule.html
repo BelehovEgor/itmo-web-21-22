@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link href="../CSS/outlines.css" rel="stylesheet">
+		<link href="../CSS/table.css" rel="stylesheet">
+		<meta name="keywords" content="Егор,Белехов,портфолио,резюме">
+		<meta name="description" content="Это резюме-портфолио Белехова Егора.">
+		<title>Белехов Егор М33021</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-color: #222629;
+				font-family: 'Montserrat', sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="navigation">
+				<div class="navigation__row">
+					<div class="navigation__item">
+						<div class="navigation__tags">
+							<a class="navigation__tag" id="main" href="#aboutme">Главное</a>
+							<a class="navigation__tag" id="knowledge" href="knowledge_page.html">Знания</a>
+							<a class="navigation__tag" id="experience" href="experience_page.html">Опыт</a>
+							<a class="navigation__tag" id="schedule" href="schedule.html">Расписание</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="wrapper" style="margin-top: 75px;">
+				<a class="anchor"></a>
+				<div id="result"></div>
+				<button class="button" type="submit" onclick="clearTable()" style="margin: 20px;">очистить</button>
+				<div class="table">
+					<form class="form" onsubmit="addItem(); return false;">
+						<label class="light__text">день:</label>
+						<select id="add_day"></select>
+						<br>
+						
+						<label class="light__text">порядок:</label>
+						<select id="add_position"></select>
+						<br>
+						
+						<label class="light__text">задача:</label>
+						<input id="item" type="text">
+						
+						<input class="button" type="submit" value="записать">
+					</form>
+					<form class="form" onsubmit="deleteItem(); return false;">
+						<label class="light__text">день:</label>
+						<select id="del_day"></select>
+						<br>
+						
+						<label class="light__text">порядок:</label>
+						<select id="del_position"></select>
+						
+						<p><input class="button" type="submit" value="удалить"></p>
+					</form>
+					<form class="form" onsubmit="rebuildTable(); return false;">
+						<div style="margin-right: 40px;">
+							<div class="light__text">Длина рабочей недели:
+								<input type="radio" name="days" value="5" checked><label class="light__text" for="radio">5</label>
+								<input type="radio" name="days" value="6"><label class="light__text" for="radio">6</label>
+							</div>
+						</div>
+						<div>
+							<div class="light__text">Максимальное число задач:
+								<input id="max_subjects" type="number" min="1" max="10" value="1">
+							</div>
+						</div>
+						<input class="button" type="submit" value="подтвердить">
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="light__text" id="task4-2"></div>
+		</footer>
+	<script src="../JS/main_script.js"></script>
+	<script src="../JS/table.js"></script>
+</html>

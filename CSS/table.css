@@ -1,0 +1,50 @@
+th {
+	background: #61892F;
+}
+
+td {
+	background: #FFFFFF;
+}
+
+td, th {
+	padding: 10px;
+}
+
+select, input {
+	margin: 10px;
+}
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.table {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	max-width: 1300px;
+}
+
+.form {
+	border: 2px solid #61892F;
+	border-radius: 20px;
+	margin: 30px;
+	padding: 20px;
+	height: 150px;
+}
+
+.button {
+	background-color: #61892F;
+	border: none;
+	border-radius: 20px;
+	color: white;
+	font-size: 16px;
+	width: 120px;
+	height: 30px;
+}

@@ -15,5 +15,8 @@ switch (local[local.length - 1]) {
 	case "experience_page.html":
 		document.getElementById("experience").classList.add("navigation__tag_selected");
 		break;
+	case "schedule.html":
+		document.getElementById("schedule").classList.add("navigation__tag_selected");
+		break;
 }
 	
